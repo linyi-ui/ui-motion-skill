@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.7-blue?style=flat-square)](https://github.com/c2311395651-stack/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/c2311395651-stack/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-24_个-orange?style=flat-square)](https://github.com/c2311395651-stack/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.8-blue?style=flat-square)](https://github.com/c2311395651-stack/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/c2311395651-stack/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-27_个-orange?style=flat-square)](https://github.com/c2311395651-stack/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -52,6 +52,7 @@ npx skills add https://github.com/c2311395651-stack/ui-motion-skill
 | 第03期 | 4 个页面切换：底部导航、底部弹窗、吸顶标题、分段标签 | [页面切换.md](prompts/页面切换.md) |
 | 第04期 | 4 个加载动效：骨架屏扫光、模糊到清晰、加载更多、AI 流式回复 | [加载动效.md](prompts/加载动效.md) |
 | 第05期 | 6 个表单输入反馈：星级评分、密码强度条、实时打勾、浮动标签、输错摇头、验证码格子 | [表单输入.md](prompts/表单输入.md) |
+| 第06期 | 3 个粒子动画：撒花庆祝、碎沙删除、粒子 Logo | [粒子动画.md](prompts/粒子动画.md) |
 | 加餐 | 2 个弹出交互：按钮长出菜单、卡片展开详情 | [弹出交互.md](prompts/弹出交互.md) |
 
 ---
@@ -86,6 +87,9 @@ npx skills add https://github.com/c2311395651-stack/ui-motion-skill
 | 22 | 浮动标签 Floating Label | 登录注册等所有文本输入框 |
 | 23 | 输错摇头 Shake on Error | 密码错误、验证码错误 |
 | 24 | 验证码格子 OTP Input | 短信、邮箱验证码 |
+| 25 | 撒花庆祝 Confetti | 打卡、支付成功、完成任务等庆祝时刻 |
+| 26 | 碎沙删除 Disintegrate | 删除消息、撤回、清除卡片 |
+| 27 | 粒子 Logo Particle Logo | 官网首页、发布页的品牌 Logo |
 
 每个动效都有：
 - ✅ 什么时候用、怎么实现、完整参数
@@ -127,6 +131,7 @@ AI 写完代码后会按检查清单逐条自检：
 
 ## 更新记录
 
+- **v0.8**（2026-10-11）：第06期 · 3 个粒子动画（撒花庆祝、碎沙删除、粒子 Logo），动效库扩充到 27 个，新增"粒子动画"规则和 4 条反廉价自检。
 - **v0.7**（2026-10-10）：第05期 · 6 个表单输入反馈（星级评分、密码强度条、实时打勾、浮动标签、输错摇头、验证码格子），动效库扩充到 24 个，新增"表单输入反馈"规则和 4 条反廉价自检。
 - **v0.6**（2026-10-09）：第04期 · 4 个加载动效（骨架屏扫光、模糊到清晰、加载更多、AI 流式回复），动效库扩充到 18 个，新增"加载与等待"规则和 4 条反廉价自检。
 - **v0.5**（2026-10-09）：第03期 · 4 个页面切换（水滴导航、底部弹窗、吸顶大标题、毛毛虫标签），动效库扩充到 14 个，新增"页面切换与空间关系"规则和 3 条反廉价自检。
