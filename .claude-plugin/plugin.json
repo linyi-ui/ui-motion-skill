@@ -1,6 +1,6 @@
 {
   "name": "ui-motion",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "UI/UX动效交互：装上后 AI 做界面会按动效库自动选对动效、按标准参数实现，不再“点一下就硬切”。",
   "author": {
     "name": "c2311395651-stack",
