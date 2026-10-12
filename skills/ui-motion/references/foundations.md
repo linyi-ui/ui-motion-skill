@@ -240,6 +240,29 @@ function step(p, dt) {
 }
 ```
 
+## 滚动触发动效
+
+滚动动效分两类，写法完全不同，先分清再动手：
+
+- **进场类（播一次）**：依次浮现。元素露出约 10–15% 时才触发（IntersectionObserver 的 `threshold` 或 `rootMargin`），同一组依次晚 50–80ms，播完就 `unobserve`，往回滑不重播。首屏内容不要藏起来等滚动，直接显示。
+- **进度类（跟手）**：视差、逐字点亮、钉住换图、进度条。动画进度 = 滚动位置的函数（0–1），手停画面就停、往回滑倒着走；绝不用定时器或 CSS transition "自己播完"。
+- **平滑但不拖**：电脑滚轮一格 100px 会"一格一跳"，用平滑跟随（每帧追上剩余距离的 10–15%）；手机原生惯性已经很顺，不要再劫持触摸滚动。
+- **钉住（sticky）**：优先用 `position: sticky`，外层容器的高度决定钉多久；钉住期间的进度 = 已滚距离 / (容器高 − 视口高)。
+- **性能**：scroll 事件里只读 `scrollY`，在 `requestAnimationFrame` 里统一写 transform / opacity；不在滚动里改 width、top、font-size；视差层加 `will-change: transform`，层数控制在 5 层以内。
+- **尊重系统设置**：`prefers-reduced-motion: reduce` 时取消视差和浮现，逐字点亮直接全亮，钉住换图改成普通上下排列。
+
+```js
+// 进度类通用写法：只读滚动位置，rAF 里写样式；平滑跟随 12%
+let target = 0, cur = 0;
+addEventListener('scroll', () => { target = scrollY; }, { passive: true });
+(function tick() {
+  cur += (target - cur) * 0.12;                    // 平滑跟随（电脑滚轮）
+  const p = clamp((cur - start) / (end - start));  // 0–1 进度，完全由滚动决定
+  layers.forEach(l => l.el.style.transform = `translateY(${-cur * l.speed}px)`);
+  requestAnimationFrame(tick);
+})();
+```
+
 ## 参数集中管理
 
 把动效参数写成 CSS 变量或 JS 常量,方便用户微调:
