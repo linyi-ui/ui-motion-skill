@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.10-blue?style=flat-square)](https://github.com/c2311395651-stack/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/c2311395651-stack/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-35_个-orange?style=flat-square)](https://github.com/c2311395651-stack/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.10-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-35_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -17,7 +17,7 @@
 **方式一：通用安装（Claude Code、Codex、Cursor 等都支持）**
 
 ```bash
-npx skills add https://github.com/c2311395651-stack/ui-motion-skill
+npx skills add https://github.com/linyi-ui/ui-motion-skill
 ```
 
 **方式二：Claude Code 插件**
@@ -25,7 +25,7 @@ npx skills add https://github.com/c2311395651-stack/ui-motion-skill
 在 Claude Code 里依次输入：
 
 ```
-/plugin marketplace add c2311395651-stack/ui-motion-skill
+/plugin marketplace add linyi-ui/ui-motion-skill
 /plugin install ui-motion@ui-motion
 ```
 
@@ -167,5 +167,5 @@ MIT，可以免费商用。
 动效库会跟着视频每期更新，想要最新的动效，重新运行一遍安装命令即可：
 
 ```bash
-npx skills add https://github.com/c2311395651-stack/ui-motion-skill
+npx skills add https://github.com/linyi-ui/ui-motion-skill
 ```
