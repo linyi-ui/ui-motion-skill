@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.11-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-40_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.12-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-45_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -56,6 +56,7 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 第07期 | 4 个图表动效：柱子长出来、折线画出来、圆环转出来、切换变形 | [图表动效.md](prompts/图表动效.md) |
 | 第08期 | 4 个滚动动效：依次浮现、视差纵深、逐字点亮、钉住换图 | [滚动动效.md](prompts/滚动动效.md) |
 | 第09期 | 5 个按钮动效：磁吸按钮、加购飞入、播放暂停变形、悬浮按钮展开、复制变勾 | [按钮动效.md](prompts/按钮动效.md) |
+| 第10期 | 5 个加载动效：启动页进首页、顶部进度条、照片上传进度、消息秒发、叫车等待 | [加载动效.md](prompts/加载动效.md) |
 | 加餐 | 2 个弹出交互：按钮长出菜单、卡片展开详情 | [弹出交互.md](prompts/弹出交互.md) |
 
 ---
@@ -106,6 +107,11 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 38 | 播放暂停变形 Play ⇄ Pause Morph | 音乐、播客、视频播放器 |
 | 39 | 悬浮按钮展开 FAB Fan Menu | App 右下角加号展开快捷操作 |
 | 40 | 复制变勾 Copy → Copied | 代码、邀请码、链接的复制按钮 |
+| 41 | 启动页进首页 Splash → Home | App、小程序打开时的启动页 |
+| 42 | 顶部进度条 Top Progress Bar | 点开详情、切换页面时的等待 |
+| 43 | 照片上传进度 Upload Progress | 发帖、发朋友圈的多图上传 |
+| 44 | 消息秒发 Optimistic Send | 聊天发消息、评论等先显示后确认 |
+| 45 | 叫车等待 Ride Matching | 打车、派单、配对等长等待 |
 
 每个动效都有：
 - ✅ 什么时候用、怎么实现、完整参数
@@ -147,6 +153,7 @@ AI 写完代码后会按检查清单逐条自检：
 
 ## 更新记录
 
+- **v0.12**（2026-10-14）：第10期 · 5 个加载动效（启动页进首页、顶部进度条、照片上传进度、消息秒发、叫车等待），动效库扩充到 45 个，新增"等待要让人觉得快"规则和 4 条反廉价自检。
 - **v0.11**（2026-10-14）：第09期 · 5 个按钮动效（磁吸按钮、加购飞入、播放暂停变形、悬浮按钮展开、复制变勾），动效库扩充到 40 个，新增"按钮进阶反馈"规则和 4 条反廉价自检。
 - **v0.10**（2026-10-13）：第08期 · 4 个滚动动效（依次浮现、视差纵深、逐字点亮、钉住换图），动效库扩充到 35 个，新增"滚动触发动效"规则和 4 条反廉价自检。
 - **v0.9**（2026-10-12）：第07期 · 4 个图表动效（柱子长出来、折线画出来、圆环转出来、切换变形），动效库扩充到 31 个，新增"图表动效"规则和 4 条反廉价自检。
