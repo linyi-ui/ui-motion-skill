@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.10-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-35_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.11-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-40_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -55,6 +55,7 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 第06期 | 3 个粒子动画：撒花庆祝、碎沙删除、粒子 Logo | [粒子动画.md](prompts/粒子动画.md) |
 | 第07期 | 4 个图表动效：柱子长出来、折线画出来、圆环转出来、切换变形 | [图表动效.md](prompts/图表动效.md) |
 | 第08期 | 4 个滚动动效：依次浮现、视差纵深、逐字点亮、钉住换图 | [滚动动效.md](prompts/滚动动效.md) |
+| 第09期 | 5 个按钮动效：磁吸按钮、加购飞入、播放暂停变形、悬浮按钮展开、复制变勾 | [按钮动效.md](prompts/按钮动效.md) |
 | 加餐 | 2 个弹出交互：按钮长出菜单、卡片展开详情 | [弹出交互.md](prompts/弹出交互.md) |
 
 ---
@@ -100,6 +101,11 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 33 | 视差纵深 Parallax | 官网首屏、活动页的立体纵深感 |
 | 34 | 逐字点亮 Scroll Text Reveal | 品牌故事、产品理念的核心大字文案 |
 | 35 | 钉住换图 Sticky Scroll | 产品发布页分段讲卖点 |
+| 36 | 磁吸按钮 Magnetic Button | 官网首屏主按钮，鼠标靠近被吸过去 |
+| 37 | 加购飞入 Add to Cart Fly | 电商加入购物车 |
+| 38 | 播放暂停变形 Play ⇄ Pause Morph | 音乐、播客、视频播放器 |
+| 39 | 悬浮按钮展开 FAB Fan Menu | App 右下角加号展开快捷操作 |
+| 40 | 复制变勾 Copy → Copied | 代码、邀请码、链接的复制按钮 |
 
 每个动效都有：
 - ✅ 什么时候用、怎么实现、完整参数
@@ -141,6 +147,7 @@ AI 写完代码后会按检查清单逐条自检：
 
 ## 更新记录
 
+- **v0.11**（2026-10-14）：第09期 · 5 个按钮动效（磁吸按钮、加购飞入、播放暂停变形、悬浮按钮展开、复制变勾），动效库扩充到 40 个，新增"按钮进阶反馈"规则和 4 条反廉价自检。
 - **v0.10**（2026-10-13）：第08期 · 4 个滚动动效（依次浮现、视差纵深、逐字点亮、钉住换图），动效库扩充到 35 个，新增"滚动触发动效"规则和 4 条反廉价自检。
 - **v0.9**（2026-10-12）：第07期 · 4 个图表动效（柱子长出来、折线画出来、圆环转出来、切换变形），动效库扩充到 31 个，新增"图表动效"规则和 4 条反廉价自检。
 - **v0.8**（2026-10-11）：第06期 · 3 个粒子动画（撒花庆祝、碎沙删除、粒子 Logo），动效库扩充到 27 个，新增"粒子动画"规则和 4 条反廉价自检。
