@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.14-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-52_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.15-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-56_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -58,8 +58,9 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 第09期 | 5 个按钮动效：磁吸按钮、加购飞入、播放暂停变形、悬浮按钮展开、复制变勾 | [按钮动效.md](prompts/按钮动效.md) |
 | 第10期 | 5 个加载动效：启动页进首页、顶部进度条、照片上传进度、消息秒发、叫车等待 | [加载动效.md](prompts/加载动效.md) |
 | 第11期 | 3 个评论区动效：@好友联想、展开楼中楼、长按表情回应 | [评论区动效.md](prompts/评论区动效.md) |
-| 第12期 | 4 个加载动效：AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度 | [加载动效.md](prompts/加载动效.md) |
+| 第12期 | 4 个加载动效：加载失败重试、新内容提示条、搜索结果加载、断网提示 | [加载动效.md](prompts/加载动效.md) |
 | 加餐 | 2 个弹出交互：按钮长出菜单、卡片展开详情 | [弹出交互.md](prompts/弹出交互.md) |
+| 加餐 | 4 个加载动效：AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度 | [加载动效加餐.md](prompts/加载动效加餐.md) |
 
 ---
 
@@ -117,10 +118,14 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 46 | @好友联想 Mention Picker | 评论、动态里输入 @ 提及好友 |
 | 47 | 展开楼中楼 Thread Expand | 评论的二级回复展开收起 |
 | 48 | 长按表情回应 Reaction Picker | 评论、消息的表情回应 |
-| 49 | AI 出图显影 AI Image Generating | AI 绘图、修图等生成等待 |
-| 50 | 图标扇形下载 App Icon Download | 应用商店、游戏、素材包下载 |
-| 51 | 视频缓冲 Video Buffering | 视频、音频播放时网慢缓冲 |
-| 52 | 外卖接力进度 Order Progress | 外卖、快递、订单多步骤状态 |
+| 49 | AI 出图显影 AI Image Generating（加餐） | AI 绘图、修图等生成等待 |
+| 50 | 图标扇形下载 App Icon Download（加餐） | 应用商店、游戏、素材包下载 |
+| 51 | 视频缓冲 Video Buffering（加餐） | 视频、音频播放时网慢缓冲 |
+| 52 | 外卖接力进度 Order Progress（加餐） | 外卖、快递、订单多步骤状态 |
+| 53 | 加载失败重试 Error → Retry | 列表、详情页加载失败后重试 |
+| 54 | 新内容提示条 New Posts Pill | 信息流有新内容到达 |
+| 55 | 搜索结果加载 Search Loading | 搜索框输入后的结果加载 |
+| 56 | 断网提示 Offline Banner | 网络断开与恢复 |
 
 每个动效都有：
 - ✅ 什么时候用、怎么实现、完整参数
@@ -162,6 +167,7 @@ AI 写完代码后会按检查清单逐条自检：
 
 ## 更新记录
 
+- **v0.15**（2026-10-16）：第12期正片换成更常用的 4 个加载动效（加载失败重试、新内容提示条、搜索结果加载、断网提示），动效库扩充到 56 个；原来的 4 个（AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度）移到加餐，新增"出错和断网不拆页面"规则和 4 条反廉价自检。
 - **v0.14**（2026-10-16）：第12期 · 4 个加载动效（AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度），动效库扩充到 52 个，新增"等待要看得见在变"规则和 4 条反廉价自检。
 - **v0.13**（2026-10-15）：第11期 · 3 个评论区动效（@好友联想、展开楼中楼、长按表情回应），动效库扩充到 48 个，新增"评论区要有来龙去脉"规则和 4 条反廉价自检。
 - **v0.12**（2026-10-14）：第10期 · 5 个加载动效（启动页进首页、顶部进度条、照片上传进度、消息秒发、叫车等待），动效库扩充到 45 个，新增"等待要让人觉得快"规则和 4 条反廉价自检。
