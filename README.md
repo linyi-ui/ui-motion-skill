@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.13-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-48_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.14-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-52_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -58,6 +58,7 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 第09期 | 5 个按钮动效：磁吸按钮、加购飞入、播放暂停变形、悬浮按钮展开、复制变勾 | [按钮动效.md](prompts/按钮动效.md) |
 | 第10期 | 5 个加载动效：启动页进首页、顶部进度条、照片上传进度、消息秒发、叫车等待 | [加载动效.md](prompts/加载动效.md) |
 | 第11期 | 3 个评论区动效：@好友联想、展开楼中楼、长按表情回应 | [评论区动效.md](prompts/评论区动效.md) |
+| 第12期 | 4 个加载动效：AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度 | [加载动效.md](prompts/加载动效.md) |
 | 加餐 | 2 个弹出交互：按钮长出菜单、卡片展开详情 | [弹出交互.md](prompts/弹出交互.md) |
 
 ---
@@ -116,6 +117,10 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 46 | @好友联想 Mention Picker | 评论、动态里输入 @ 提及好友 |
 | 47 | 展开楼中楼 Thread Expand | 评论的二级回复展开收起 |
 | 48 | 长按表情回应 Reaction Picker | 评论、消息的表情回应 |
+| 49 | AI 出图显影 AI Image Generating | AI 绘图、修图等生成等待 |
+| 50 | 图标扇形下载 App Icon Download | 应用商店、游戏、素材包下载 |
+| 51 | 视频缓冲 Video Buffering | 视频、音频播放时网慢缓冲 |
+| 52 | 外卖接力进度 Order Progress | 外卖、快递、订单多步骤状态 |
 
 每个动效都有：
 - ✅ 什么时候用、怎么实现、完整参数
@@ -157,6 +162,7 @@ AI 写完代码后会按检查清单逐条自检：
 
 ## 更新记录
 
+- **v0.14**（2026-10-16）：第12期 · 4 个加载动效（AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度），动效库扩充到 52 个，新增"等待要看得见在变"规则和 4 条反廉价自检。
 - **v0.13**（2026-10-15）：第11期 · 3 个评论区动效（@好友联想、展开楼中楼、长按表情回应），动效库扩充到 48 个，新增"评论区要有来龙去脉"规则和 4 条反廉价自检。
 - **v0.12**（2026-10-14）：第10期 · 5 个加载动效（启动页进首页、顶部进度条、照片上传进度、消息秒发、叫车等待），动效库扩充到 45 个，新增"等待要让人觉得快"规则和 4 条反廉价自检。
 - **v0.11**（2026-10-14）：第09期 · 5 个按钮动效（磁吸按钮、加购飞入、播放暂停变形、悬浮按钮展开、复制变勾），动效库扩充到 40 个，新增"按钮进阶反馈"规则和 4 条反廉价自检。
