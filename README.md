@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.15-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-56_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.16-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-60_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -59,6 +59,7 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 第10期 | 5 个加载动效：启动页进首页、顶部进度条、照片上传进度、消息秒发、叫车等待 | [加载动效.md](prompts/加载动效.md) |
 | 第11期 | 3 个评论区动效：@好友联想、展开楼中楼、长按表情回应 | [评论区动效.md](prompts/评论区动效.md) |
 | 第12期 | 4 个加载动效：加载失败重试、新内容提示条、搜索结果加载、断网提示 | [加载动效.md](prompts/加载动效.md) |
+| 第13期 | 4 个通知提醒动效：顶部消息横幅、红点数字角标、撤销提示条、通知堆叠展开 | [通知提醒.md](prompts/通知提醒.md) |
 | 加餐 | 2 个弹出交互：按钮长出菜单、卡片展开详情 | [弹出交互.md](prompts/弹出交互.md) |
 | 加餐 | 4 个加载动效：AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度 | [加载动效加餐.md](prompts/加载动效加餐.md) |
 
@@ -126,6 +127,10 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 54 | 新内容提示条 New Posts Pill | 信息流有新内容到达 |
 | 55 | 搜索结果加载 Search Loading | 搜索框输入后的结果加载 |
 | 56 | 断网提示 Offline Banner | 网络断开与恢复 |
+| 57 | 顶部消息横幅 In-app Banner | App 内收到新消息、新评论 |
+| 58 | 红点数字角标 Badge Count | 底部导航、图标上的未读数量 |
+| 59 | 撤销提示条 Toast with Undo | 删除、归档后给几秒反悔 |
+| 60 | 通知堆叠展开 Stacked Notifications | 通知中心同类通知叠成一摞 |
 
 每个动效都有：
 - ✅ 什么时候用、怎么实现、完整参数
@@ -167,6 +172,7 @@ AI 写完代码后会按检查清单逐条自检：
 
 ## 更新记录
 
+- **v0.16**（2026-10-17）：第13期 · 4 个通知提醒动效（顶部消息横幅、红点数字角标、撤销提示条、通知堆叠展开），动效库扩充到 60 个，新增"提醒不打扰"规则和 5 条反廉价自检。
 - **v0.15**（2026-10-16）：第12期正片换成更常用的 4 个加载动效（加载失败重试、新内容提示条、搜索结果加载、断网提示），动效库扩充到 56 个；原来的 4 个（AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度）移到加餐，新增"出错和断网不拆页面"规则和 4 条反廉价自检。
 - **v0.14**（2026-10-16）：第12期 · 4 个加载动效（AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度），动效库扩充到 52 个，新增"等待要看得见在变"规则和 4 条反廉价自检。
 - **v0.13**（2026-10-15）：第11期 · 3 个评论区动效（@好友联想、展开楼中楼、长按表情回应），动效库扩充到 48 个，新增"评论区要有来龙去脉"规则和 4 条反廉价自检。
