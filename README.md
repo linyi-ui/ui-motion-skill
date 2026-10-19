@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.16-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-60_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.17-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-64_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -60,6 +60,7 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 第11期 | 3 个评论区动效：@好友联想、展开楼中楼、长按表情回应 | [评论区动效.md](prompts/评论区动效.md) |
 | 第12期 | 4 个加载动效：加载失败重试、新内容提示条、搜索结果加载、断网提示 | [加载动效.md](prompts/加载动效.md) |
 | 第13期 | 4 个通知提醒动效：顶部消息横幅、红点数字角标、撤销提示条、通知堆叠展开 | [通知提醒.md](prompts/通知提醒.md) |
+| 第14期 | 4 个新手引导动效：聚光灯功能引导、欢迎页滑动引导、空状态引导、权限请求前说明 | [新手引导.md](prompts/新手引导.md) |
 | 加餐 | 2 个弹出交互：按钮长出菜单、卡片展开详情 | [弹出交互.md](prompts/弹出交互.md) |
 | 加餐 | 4 个加载动效：AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度 | [加载动效加餐.md](prompts/加载动效加餐.md) |
 
@@ -131,6 +132,10 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 58 | 红点数字角标 Badge Count | 底部导航、图标上的未读数量 |
 | 59 | 撤销提示条 Toast with Undo | 删除、归档后给几秒反悔 |
 | 60 | 通知堆叠展开 Stacked Notifications | 通知中心同类通知叠成一摞 |
+| 61 | 聚光灯功能引导 Spotlight Coach Mark | 首次打开、新功能上线指出按钮在哪 |
+| 62 | 欢迎页滑动引导 Onboarding Carousel | 首次安装的几页功能介绍 |
+| 63 | 空状态引导 Empty State CTA | 列表第一次为空时引导添加 |
+| 64 | 权限请求前说明 Permission Pre-prompt | 申请通知、定位、相机等权限之前 |
 
 每个动效都有：
 - ✅ 什么时候用、怎么实现、完整参数
@@ -172,6 +177,7 @@ AI 写完代码后会按检查清单逐条自检：
 
 ## 更新记录
 
+- **v0.17**（2026-10-19）：第14期 · 4 个新手引导动效（聚光灯功能引导、欢迎页滑动引导、空状态引导、权限请求前说明），动效库扩充到 64 个，新增"引导要指路、不拦路"规则和 5 条反廉价自检。
 - **v0.16**（2026-10-17）：第13期 · 4 个通知提醒动效（顶部消息横幅、红点数字角标、撤销提示条、通知堆叠展开），动效库扩充到 60 个，新增"提醒不打扰"规则和 5 条反廉价自检。
 - **v0.15**（2026-10-16）：第12期正片换成更常用的 4 个加载动效（加载失败重试、新内容提示条、搜索结果加载、断网提示），动效库扩充到 56 个；原来的 4 个（AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度）移到加餐，新增"出错和断网不拆页面"规则和 4 条反廉价自检。
 - **v0.14**（2026-10-16）：第12期 · 4 个加载动效（AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度），动效库扩充到 52 个，新增"等待要看得见在变"规则和 4 条反廉价自检。
