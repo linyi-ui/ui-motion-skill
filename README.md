@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.18-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-68_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.19-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-72_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -62,6 +62,7 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 第13期 | 4 个通知提醒动效：顶部消息横幅、红点数字角标、撤销提示条、通知堆叠展开 | [通知提醒.md](prompts/通知提醒.md) |
 | 第14期 | 4 个新手引导动效：聚光灯功能引导、欢迎页滑动引导、空状态引导、权限请求前说明 | [新手引导.md](prompts/新手引导.md) |
 | 第15期 | 4 个卡片动效：按下微倾、卡片翻面、吸附轮播、长按浮起 | [卡片动效.md](prompts/卡片动效.md) |
+| 第16期 | 4 个图片查看动效：点开放大、双指缩放、下滑关闭、多图左右滑 | [图片查看.md](prompts/图片查看.md) |
 | 加餐 | 2 个弹出交互：按钮长出菜单、卡片展开详情 | [弹出交互.md](prompts/弹出交互.md) |
 | 加餐 | 4 个加载动效：AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度 | [加载动效加餐.md](prompts/加载动效加餐.md) |
 
@@ -141,6 +142,10 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 66 | 卡片翻面 Flip Card | 背单词、会员卡点一下看另一面 |
 | 67 | 吸附轮播 Snap Carousel | 首页推荐、优惠券横向卡片轮播 |
 | 68 | 长按浮起 Long-press Lift | 长按卡片弹出收藏/分享/删除菜单 |
+| 69 | 点开放大 Tap to Zoom | 图片社区、相册网格点一张图看大图 |
+| 70 | 双指缩放 Pinch to Zoom | 商品详情页图片放大看细节 |
+| 71 | 下滑关闭 Swipe Down to Dismiss | 相册、看图页手势关闭返回列表 |
+| 72 | 多图左右滑 Gallery Swipe | 商品详情页多图、相册查看器左右切图 |
 
 每个动效都有：
 - ✅ 什么时候用、怎么实现、完整参数
@@ -182,6 +187,7 @@ AI 写完代码后会按检查清单逐条自检：
 
 ## 更新记录
 
+- **v0.19**（2026-10-21）：第16期 · 4 个图片查看动效（点开放大、双指缩放、下滑关闭、多图左右滑），动效库扩充到 72 个，新增"图片查看要连续、跟手"场景判断。
 - **v0.18**（2026-10-20）：第15期 · 4 个卡片动效（按下微倾、卡片翻面、吸附轮播、长按浮起），动效库扩充到 68 个，新增"卡片要有分量、不是硬切"规则。
 - **v0.17**（2026-10-19）：第14期 · 4 个新手引导动效（聚光灯功能引导、欢迎页滑动引导、空状态引导、权限请求前说明），动效库扩充到 64 个，新增"引导要指路、不拦路"规则和 5 条反廉价自检。
 - **v0.16**（2026-10-17）：第13期 · 4 个通知提醒动效（顶部消息横幅、红点数字角标、撤销提示条、通知堆叠展开），动效库扩充到 60 个，新增"提醒不打扰"规则和 5 条反廉价自检。
