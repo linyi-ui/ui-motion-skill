@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.20-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-76_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.21-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-80_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -64,6 +64,7 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 第15期 | 4 个卡片动效：按下微倾、卡片翻面、吸附轮播、长按浮起 | [卡片动效.md](prompts/卡片动效.md) |
 | 第16期 | 4 个图片查看动效：点开放大、双指缩放、下滑关闭、多图左右滑 | [图片查看.md](prompts/图片查看.md) |
 | 第17期 | 4 个搜索筛选动效：搜索框展开、热门标签联想、筛选面板滑出、结果排序切换 | [搜索筛选动效.md](prompts/搜索筛选动效.md) |
+| 第18期 | 4 个选择器动效：数量加减、双头价格滑块、日历选区间、滚轮选择器 | [选择器动效.md](prompts/选择器动效.md) |
 | 加餐 | 2 个弹出交互：按钮长出菜单、卡片展开详情 | [弹出交互.md](prompts/弹出交互.md) |
 | 加餐 | 4 个加载动效：AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度 | [加载动效加餐.md](prompts/加载动效加餐.md) |
 
@@ -151,6 +152,10 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 74 | 热门标签联想 Suggestion Chips | 搜索框输入时下方联想词、热门标签 |
 | 75 | 筛选面板滑出 Filter Panel | 商品/内容列表点筛选按钮弹出条件面板 |
 | 76 | 结果排序切换 Sort Switch | 商品/搜索结果列表切换排序方式 |
+| 77 | 数量加减 Stepper | 购物车、下单页改购买数量 |
+| 78 | 双头价格滑块 Range Slider | 商品筛选选价格区间 |
+| 79 | 日历选区间 Date Range | 订酒店、租车、请假选开始和结束日期 |
+| 80 | 滚轮选择器 Wheel Picker | 选生日、时间、地区等多列选项 |
 
 每个动效都有：
 - ✅ 什么时候用、怎么实现、完整参数
@@ -192,6 +197,7 @@ AI 写完代码后会按检查清单逐条自检：
 
 ## 更新记录
 
+- **v0.21**（2026-10-23）：第18期 · 4 个选择器动效（数量加减、双头价格滑块、日历选区间、滚轮选择器），动效库扩充到 80 个，新增"选择器要跟手、有刻度感"规则和 4 条反廉价自检。
 - **v0.20**（2026-10-22）：第17期 · 4 个搜索筛选动效（搜索框展开、热门标签联想、筛选面板滑出、结果排序切换），动效库扩充到 76 个，新增"搜索筛选要连续、不重排"规则和 5 条反廉价自检。
 - **v0.19**（2026-10-21）：第16期 · 4 个图片查看动效（点开放大、双指缩放、下滑关闭、多图左右滑），动效库扩充到 72 个，新增"图片查看要连续、跟手"场景判断。
 - **v0.18**（2026-10-20）：第15期 · 4 个卡片动效（按下微倾、卡片翻面、吸附轮播、长按浮起），动效库扩充到 68 个，新增"卡片要有分量、不是硬切"规则。
