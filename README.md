@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.22-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-84_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.23-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-88_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -66,6 +66,7 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 第17期 | 4 个搜索筛选动效：搜索框展开、热门标签联想、筛选面板滑出、结果排序切换 | [搜索筛选动效.md](prompts/搜索筛选动效.md) |
 | 第18期 | 4 个选择器动效：数量加减、双头价格滑块、日历选区间、滚轮选择器 | [选择器动效.md](prompts/选择器动效.md) |
 | 第19期 | 4 个登录页动效：登录弹窗、登录方式切换、密码小眼睛、验证码倒计时 | [登录页动效.md](prompts/登录页动效.md) |
+| 第20期 | 4 个进度反馈动效：步骤圆点进度条、环形进度+数字滚动、分段进度条平滑过渡、清单打勾完成度 | [进度反馈动效.md](prompts/进度反馈动效.md) |
 | 加餐 | 2 个弹出交互：按钮长出菜单、卡片展开详情 | [弹出交互.md](prompts/弹出交互.md) |
 | 加餐 | 4 个加载动效：AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度 | [加载动效加餐.md](prompts/加载动效加餐.md) |
 
@@ -161,6 +162,10 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 82 | 登录方式切换 Method Switch | 验证码登录和密码登录来回切换 |
 | 83 | 密码小眼睛 Password Peek | 密码框显示/隐藏密码 |
 | 84 | 验证码倒计时 Resend Timer | 获取验证码后的重发倒计时按钮 |
+| 85 | 步骤圆点进度条 Step Dots Progress | 注册、下单、商家入驻等多步流程顶部进度 |
+| 86 | 环形进度+数字滚动 Circular Progress Ring | 打卡、上传、运动记录等完成度展示 |
+| 87 | 分段进度条平滑过渡 Segmented Progress Bar | 问卷、支付等分段流程进度 |
+| 88 | 清单打勾完成度 Checklist Progress | 完善资料、新手任务等清单打勾页面 |
 
 每个动效都有：
 - ✅ 什么时候用、怎么实现、完整参数
@@ -202,6 +207,7 @@ AI 写完代码后会按检查清单逐条自检：
 
 ## 更新记录
 
+- **v0.23**（2026-10-27）：第20期 · 4 个进度反馈动效（步骤圆点进度条、环形进度+数字滚动、分段进度条平滑过渡、清单打勾完成度），动效库扩充到 88 个，新增"进度反馈要让人看见在变、走到头有回应"规则。
 - **v0.22**（2026-10-25）：第19期 · 4 个登录页动效（登录弹窗、登录方式切换、密码小眼睛、验证码倒计时），动效库扩充到 84 个，新增"登录页要顺、不打断"规则和 4 条反廉价自检。
 - **v0.21**（2026-10-23）：第18期 · 4 个选择器动效（数量加减、双头价格滑块、日历选区间、滚轮选择器），动效库扩充到 80 个，新增"选择器要跟手、有刻度感"规则和 4 条反廉价自检。
 - **v0.20**（2026-10-22）：第17期 · 4 个搜索筛选动效（搜索框展开、热门标签联想、筛选面板滑出、结果排序切换），动效库扩充到 76 个，新增"搜索筛选要连续、不重排"规则和 5 条反廉价自检。
