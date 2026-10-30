@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.24-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-91_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.25-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-95_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -68,6 +68,7 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 第19期 | 4 个登录页动效：登录弹窗、登录方式切换、密码小眼睛、验证码倒计时 | [登录页动效.md](prompts/登录页动效.md) |
 | 第20期 | 4 个进度反馈动效：步骤圆点进度条、环形进度+数字滚动、分段进度条平滑过渡、清单打勾完成度 | [进度反馈动效.md](prompts/进度反馈动效.md) |
 | 第21期 | 4 个展开折叠动效：手风琴展开、展开全文、卡片放大详情、底部抽屉拖拽 | [展开折叠动效.md](prompts/展开折叠动效.md) |
+| 第22期 | 4 个数字滚动动效：金额平滑滚动、点赞数翻滚、积分庆祝累加、统计数字入场 | [数字滚动动效.md](prompts/数字滚动动效.md) |
 | 加餐 | 2 个弹出交互：按钮长出菜单、卡片展开详情 | [弹出交互.md](prompts/弹出交互.md) |
 | 加餐 | 4 个加载动效：AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度 | [加载动效加餐.md](prompts/加载动效加餐.md) |
 
@@ -170,6 +171,10 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 89 | 手风琴展开 Accordion | FAQ、设置项点标题展开答案、互斥收起 |
 | 90 | 展开全文 Read More | 长文、笔记「...展开全文 / 收起」 |
 | 91 | 底部抽屉拖拽 Drag Sheet | 地图、音乐等底部可跟手拖拽、吸附档位的面板 |
+| 92 | 金额平滑滚动 Count-up Rolling | 钱包余额、收益、到账金额从旧值滚到新值 |
+| 93 | 点赞数翻滚 Odometer Roll | 点赞、收藏数 +1 里程表式只翻变化位 |
+| 94 | 积分庆祝累加 Score Ticker | 打卡、任务完成拿积分，到顶放大回弹 |
+| 95 | 统计数字入场 Stat Count-in | 看板、总结页统计数字从 0 滚入回弹 |
 
 每个动效都有：
 - ✅ 什么时候用、怎么实现、完整参数
@@ -211,6 +216,7 @@ AI 写完代码后会按检查清单逐条自检：
 
 ## 更新记录
 
+- **v0.25**（2026-10-30）：第22期 · 4 个数字滚动动效（金额平滑滚动、点赞数翻滚、积分庆祝累加、统计数字入场），动效库扩充到 95 个，新增"数字变化要滚着变"规则。
 - **v0.24**（2026-10-29）：第21期 · 4 个展开折叠动效（手风琴展开、展开全文、底部抽屉拖拽，卡片放大详情补强了已有的卡片展开），动效库扩充到 91 个，新增"展开折叠要有高度过渡、拖拽要跟手吸档"规则。
 - **v0.23**（2026-10-27）：第20期 · 4 个进度反馈动效（步骤圆点进度条、环形进度+数字滚动、分段进度条平滑过渡、清单打勾完成度），动效库扩充到 88 个，新增"进度反馈要让人看见在变、走到头有回应"规则。
 - **v0.22**（2026-10-25）：第19期 · 4 个登录页动效（登录弹窗、登录方式切换、密码小眼睛、验证码倒计时），动效库扩充到 84 个，新增"登录页要顺、不打断"规则和 4 条反廉价自检。
