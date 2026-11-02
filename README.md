@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.26-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-99_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.27-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-103_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -70,6 +70,7 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 第21期 | 4 个展开折叠动效：手风琴展开、展开全文、卡片放大详情、底部抽屉拖拽 | [展开折叠动效.md](prompts/展开折叠动效.md) |
 | 第22期 | 4 个数字滚动动效：金额平滑滚动、点赞数翻滚、积分庆祝累加、统计数字入场 | [数字滚动动效.md](prompts/数字滚动动效.md) |
 | 第23期 | 4 个弹窗与菜单动效：确认对话框、下拉操作菜单、长按上下文菜单、底部操作表 | [弹窗菜单动效.md](prompts/弹窗菜单动效.md) |
+| 第24期 | 4 个音乐播放动效：黑胶封面旋转、歌词逐行高亮、上滑切歌、播放页下滑收起 | [音乐播放动效.md](prompts/音乐播放动效.md) |
 | 加餐 | 2 个弹出交互：按钮长出菜单、卡片展开详情 | [弹出交互.md](prompts/弹出交互.md) |
 | 加餐 | 4 个加载动效：AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度 | [加载动效加餐.md](prompts/加载动效加餐.md) |
 
@@ -180,6 +181,10 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 97 | 下拉操作菜单 Popover Menu | 右上角「⋯」锚定按钮展开，菜单项错落淡入 |
 | 98 | 长按上下文菜单 Context Menu | 长按卡片浮起 + 背景压暗，菜单从卡片下方弹出 |
 | 99 | 底部操作表 Action Sheet | 分享等操作从底部上滑升起，选项错落登场 |
+| 100 | 黑胶封面旋转 Vinyl Spin | 音乐播放页点播放，黑胶从封面后滑出、唱针落下、暂停阻尼减速 |
+| 101 | 歌词逐行高亮 Lyrics Sync | 歌词页 / KTV 提词器，当前句高亮、放大、列表居中跟随 |
+| 102 | 上滑切歌 Track Swipe | 播放页按住封面往上拖，跟手切下一首，超阈值弹性归位 |
+| 103 | 播放页下滑收起 Player Collapse | 全屏播放页往下拖收起，背景放大变亮，底部留迷你条 |
 
 每个动效都有：
 - ✅ 什么时候用、怎么实现、完整参数
@@ -221,6 +226,7 @@ AI 写完代码后会按检查清单逐条自检：
 
 ## 更新记录
 
+- **v0.27**（2026-11-02）：第24期 · 4 个音乐播放动效（黑胶封面旋转、歌词逐行高亮、上滑切歌、播放页下滑收起），动效库扩充到 103 个，新增"播放器要像真的在放"规则。
 - **v0.26**：第23期 4个弹窗与菜单动效，新增 确认对话框、下拉操作菜单、长按上下文菜单、底部操作表，动效库扩充到 99 个。
 - **v0.25**（2026-10-30）：第22期 · 4 个数字滚动动效（金额平滑滚动、点赞数翻滚、积分庆祝累加、统计数字入场），动效库扩充到 95 个，新增"数字变化要滚着变"规则。
 - **v0.24**（2026-10-29）：第21期 · 4 个展开折叠动效（手风琴展开、展开全文、底部抽屉拖拽，卡片放大详情补强了已有的卡片展开），动效库扩充到 91 个，新增"展开折叠要有高度过渡、拖拽要跟手吸档"规则。
