@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.29-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-111_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.30-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-117_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -73,6 +73,7 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 第24期 | 4 个音乐播放动效：黑胶封面旋转、歌词逐行高亮、上滑切歌、播放页下滑收起 | [音乐播放动效.md](prompts/音乐播放动效.md) |
 | 第25期 | 4 个聊天动效：输入框收起变形、气泡边打边长、正在输入提示条、双击爱心回应 | [聊天动效.md](prompts/聊天动效.md) |
 | 第26期 | 4 个打卡与奖励动效：长按打卡、能量飞入、里程碑揭晓、目标选择页 | [打卡动效.md](prompts/打卡动效.md) |
+| 第27期 | 6 个卡券动效：票档横滑、滑动选票、票券打印、会员卡就绪、会员卡装配、收进卡包 | [卡券动效.md](prompts/卡券动效.md) |
 | 加餐 | 2 个弹出交互：按钮长出菜单、卡片展开详情 | [弹出交互.md](prompts/弹出交互.md) |
 | 加餐 | 4 个加载动效：AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度 | [加载动效加餐.md](prompts/加载动效加餐.md) |
 
@@ -195,6 +196,12 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 109 | 能量飞入 Energy Fly | 完成任务后 +1 胶囊弹出，沿弧线飞进右上角计数器 |
 | 110 | 里程碑揭晓 Streak Reveal | 连续天数达成，灰色里程碑卡弹起变橙、发奖励、横滑到下一张 |
 | 111 | 目标选择页 Goal Commit | 选择 7/14/30/90 天连续目标，新页横滑、选项错峰入场 |
+| 112 | 票档横滑 Plan Tab | 票务/会员/订阅切换档位，整页横滑、胶囊拉长 |
+| 113 | 滑动选票 Ticket Slider | 购票选票数，金滑块线性改数、金票粒子 |
+| 114 | 票券打印 Ticket Print | 出票结果，票条压窄上色、倒计时 |
+| 115 | 会员卡就绪 Card Ready | 开卡成功，特写硬切、卡片指数收缩 |
+| 116 | 会员卡装配 Card Setup | 开卡加载页到就绪页，交叉淡入上移 |
+| 117 | 收进卡包 Wallet Slip | 卡包媒体入口，固定框内三段硬切 |
 
 每个动效都有：
 - ✅ 什么时候用、怎么实现、完整参数
@@ -236,6 +243,7 @@ AI 写完代码后会按检查清单逐条自检：
 
 ## 更新记录
 
+- **v0.30**（2026-11-05）：第27期 · 6 个卡券动效（票档横滑、滑动选票、票券打印、会员卡就绪、会员卡装配、收进卡包），动效库扩充到 117 个，新增"卡券要像真的在出票/开卡"规则。
 - **v0.29**（2026-11-04）：第26期 · 4 个打卡与奖励动效（长按打卡、能量飞入、里程碑揭晓、目标选择页），动效库扩充到 111 个，新增"打卡要有完成感"规则。
 - **v0.28**（2026-11-03）：第25期 · 4 个聊天动效（输入框收起变形、气泡边打边长、正在输入提示条、双击爱心回应），动效库扩充到 107 个，新增"聊天要像在对话"规则。
 - **v0.27**（2026-11-02）：第24期 · 4 个音乐播放动效（黑胶封面旋转、歌词逐行高亮、上滑切歌、播放页下滑收起），动效库扩充到 103 个，新增"播放器要像真的在放"规则。
