@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.31-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-125_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.32-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-131_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -75,6 +75,7 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 第26期 | 4 个打卡与奖励动效：长按打卡、能量飞入、里程碑揭晓、目标选择页 | [打卡动效.md](prompts/打卡动效.md) |
 | 第27期 | 6 个卡券动效：票档横滑、滑动选票、票券打印、会员卡就绪、会员卡装配、收进卡包 | [卡券动效.md](prompts/卡券动效.md) |
 | 第28期 | 8 个 AI 对话动效：语音球呼吸、聆听描边、竖滑档位、面板长高、逐词跟读、下拉返回、工具弧、连接成功 | [AI对话动效.md](prompts/AI对话动效.md) |
+| 第29期 | 6 个页面转场动效：卡片变整页、弹层长成整页、返回视差、网格塌缩、图标飞行、导航长成面板 | [页面转场动效.md](prompts/页面转场动效.md) |
 | 加餐 | 2 个弹出交互：按钮长出菜单、卡片展开详情 | [弹出交互.md](prompts/弹出交互.md) |
 | 加餐 | 4 个加载动效：AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度 | [加载动效加餐.md](prompts/加载动效加餐.md) |
 
@@ -252,6 +253,7 @@ AI 写完代码后会按检查清单逐条自检：
 
 ## 更新记录
 
+- **v0.32**（2026-11-07）：第29期 · 6 个页面转场动效（卡片变整页、弹层长成整页、返回视差、网格塌缩、图标飞行、导航长成面板），动效库扩充到 131 个，新增"页面转场要让人看见从哪来到哪去"规则。
 - **v0.31**（2026-11-06）：第28期 · 8 个 AI 对话动效（语音球呼吸、聆听描边、竖滑档位、面板长高、逐词跟读、下拉返回、工具弧、连接成功），动效库扩充到 125 个，新增"AI 对话要有活体感、先给反馈再给结果"规则。
 - **v0.30**（2026-11-05）：第27期 · 6 个卡券动效（票档横滑、滑动选票、票券打印、会员卡就绪、会员卡装配、收进卡包），动效库扩充到 117 个，新增"卡券要像真的在出票/开卡"规则。
 - **v0.29**（2026-11-04）：第26期 · 4 个打卡与奖励动效（长按打卡、能量飞入、里程碑揭晓、目标选择页），动效库扩充到 111 个，新增"打卡要有完成感"规则。
