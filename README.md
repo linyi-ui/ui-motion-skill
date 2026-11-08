@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.32-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-131_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.33-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-137_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -76,6 +76,7 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 第27期 | 6 个卡券动效：票档横滑、滑动选票、票券打印、会员卡就绪、会员卡装配、收进卡包 | [卡券动效.md](prompts/卡券动效.md) |
 | 第28期 | 8 个 AI 对话动效：语音球呼吸、聆听描边、竖滑档位、面板长高、逐词跟读、下拉返回、工具弧、连接成功 | [AI对话动效.md](prompts/AI对话动效.md) |
 | 第29期 | 6 个页面转场动效：卡片变整页、弹层长成整页、返回视差、网格塌缩、图标飞行、导航长成面板 | [页面转场动效.md](prompts/页面转场动效.md) |
+| 第30期 | 6 个个人主页动效：头像堆叠展开、关注按钮变形、粉丝数翻滚、封面视差收起、简介就地编辑、上传进度环 | [个人主页动效.md](prompts/个人主页动效.md) |
 | 加餐 | 2 个弹出交互：按钮长出菜单、卡片展开详情 | [弹出交互.md](prompts/弹出交互.md) |
 | 加餐 | 4 个加载动效：AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度 | [加载动效加餐.md](prompts/加载动效加餐.md) |
 
@@ -212,6 +213,18 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 123 | 下拉返回 Pull Back | 详情页跟手缩小圆角，过阈值关闭 |
 | 124 | 工具弧 Tools Arc | 图标沿弧线滚动，中心放大两侧淡出 |
 | 125 | 连接成功 Connect Pulse | 呼吸光晕加扩散环，文字错峰入场 |
+| 126 | 卡片变整页 Card Morph | 网格卡片展开成整页（设置页/详情页） |
+| 127 | 弹层长成整页 Sheet to Screen | 弹层选完一项进入完整二级页 |
+| 128 | 返回视差 Back Parallax | 二级页返回，两层不同速度 + 边缘投影 |
+| 129 | 网格塌缩 Grid to Tabs | 首页大图标入口随滚动收成顶部标签栏 |
+| 130 | 图标飞行 Icon Flight | 列表行图标连续飞到下一页 |
+| 131 | 导航长成面板 Bar to Panel | 底部导航"更多"长高展开次级菜单 |
+| 132 | 头像堆叠展开 Avatar Stack | 个人主页首屏、社区引导页的真人感 |
+| 133 | 关注按钮变形 Follow Morph | 关注按钮点完要"被回应" |
+| 134 | 粉丝数翻滚 Follower Ticker | 粉丝数、播放量变化翻滚 |
+| 135 | 封面视差收起 Cover Collapse | 个人主页/店铺主页顶部大封面 |
+| 136 | 简介就地编辑 Inline Edit | 个人简介、备注就地修改 |
+| 137 | 上传进度环 Upload Ring | 头像、封面、文件上传等待 |
 
 每个动效都有：
 - ✅ 什么时候用、怎么实现、完整参数
@@ -253,6 +266,7 @@ AI 写完代码后会按检查清单逐条自检：
 
 ## 更新记录
 
+- **v0.33**（2026-11-08）：第30期 · 6 个个人主页动效（头像堆叠展开、关注按钮变形、粉丝数翻滚、封面视差收起、简介就地编辑、上传进度环），动效库扩充到 137 个，新增"个人主页要不死但也不吵"规则。
 - **v0.32**（2026-11-07）：第29期 · 6 个页面转场动效（卡片变整页、弹层长成整页、返回视差、网格塌缩、图标飞行、导航长成面板），动效库扩充到 131 个，新增"页面转场要让人看见从哪来到哪去"规则。
 - **v0.31**（2026-11-06）：第28期 · 8 个 AI 对话动效（语音球呼吸、聆听描边、竖滑档位、面板长高、逐词跟读、下拉返回、工具弧、连接成功），动效库扩充到 125 个，新增"AI 对话要有活体感、先给反馈再给结果"规则。
 - **v0.30**（2026-11-05）：第27期 · 6 个卡券动效（票档横滑、滑动选票、票券打印、会员卡就绪、会员卡装配、收进卡包），动效库扩充到 117 个，新增"卡券要像真的在出票/开卡"规则。
