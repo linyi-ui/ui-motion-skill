@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.33-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-137_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.34-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-143_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -77,6 +77,7 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 第28期 | 8 个 AI 对话动效：语音球呼吸、聆听描边、竖滑档位、面板长高、逐词跟读、下拉返回、工具弧、连接成功 | [AI对话动效.md](prompts/AI对话动效.md) |
 | 第29期 | 6 个页面转场动效：卡片变整页、弹层长成整页、返回视差、网格塌缩、图标飞行、导航长成面板 | [页面转场动效.md](prompts/页面转场动效.md) |
 | 第30期 | 6 个个人主页动效：头像堆叠展开、关注按钮变形、粉丝数翻滚、封面视差收起、简介就地编辑、上传进度环 | [个人主页动效.md](prompts/个人主页动效.md) |
+| 第31期 | 6 个相机交互动效：对焦方框、快门拖拽锁定、刻度旋钮横滑、控制盘错峰展开、取景框形变、弧形变焦条 | [相机交互动效.md](prompts/相机交互动效.md) |
 | 加餐 | 2 个弹出交互：按钮长出菜单、卡片展开详情 | [弹出交互.md](prompts/弹出交互.md) |
 | 加餐 | 4 个加载动效：AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度 | [加载动效加餐.md](prompts/加载动效加餐.md) |
 
@@ -225,6 +226,12 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 135 | 封面视差收起 Cover Collapse | 个人主页/店铺主页顶部大封面 |
 | 136 | 简介就地编辑 Inline Edit | 个人简介、备注就地修改 |
 | 137 | 上传进度环 Upload Ring | 头像、封面、文件上传等待 |
+| 138 | 对焦方框 Focus Bracket | 拍照/扫码取景器点了要对上 |
+| 139 | 快门拖拽锁定 Shutter Drag Lock | 相机录像快门要拖一下才录 |
+| 140 | 刻度旋钮横滑 Dial Scrub | 快门速度、曝光这类连续参数 |
+| 141 | 控制盘错峰展开 Controls Stagger | 点一下展开一排控件 |
+| 142 | 取景框形变 Mask Morph | 取景遮罩、头像框要换形状 |
+| 143 | 弧形变焦条 Zoom Arc | 变焦档位沿弧线排布 |
 
 每个动效都有：
 - ✅ 什么时候用、怎么实现、完整参数
@@ -266,6 +273,7 @@ AI 写完代码后会按检查清单逐条自检：
 
 ## 更新记录
 
+- **v0.34**（2026-11-09）：第31期 · 6 个相机交互动效（对焦方框、快门拖拽锁定、刻度旋钮横滑、控制盘错峰展开、取景框形变、弧形变焦条），动效库扩充到 143 个，新增"相机交互要像一台真机器：有阻尼、有阈值、有反馈"规则。
 - **v0.33**（2026-11-08）：第30期 · 6 个个人主页动效（头像堆叠展开、关注按钮变形、粉丝数翻滚、封面视差收起、简介就地编辑、上传进度环），动效库扩充到 137 个，新增"个人主页要不死但也不吵"规则。
 - **v0.32**（2026-11-07）：第29期 · 6 个页面转场动效（卡片变整页、弹层长成整页、返回视差、网格塌缩、图标飞行、导航长成面板），动效库扩充到 131 个，新增"页面转场要让人看见从哪来到哪去"规则。
 - **v0.31**（2026-11-06）：第28期 · 8 个 AI 对话动效（语音球呼吸、聆听描边、竖滑档位、面板长高、逐词跟读、下拉返回、工具弧、连接成功），动效库扩充到 125 个，新增"AI 对话要有活体感、先给反馈再给结果"规则。
