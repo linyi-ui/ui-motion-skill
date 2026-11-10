@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.34-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-143_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.35-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-149_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -78,6 +78,7 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 第29期 | 6 个页面转场动效：卡片变整页、弹层长成整页、返回视差、网格塌缩、图标飞行、导航长成面板 | [页面转场动效.md](prompts/页面转场动效.md) |
 | 第30期 | 6 个个人主页动效：头像堆叠展开、关注按钮变形、粉丝数翻滚、封面视差收起、简介就地编辑、上传进度环 | [个人主页动效.md](prompts/个人主页动效.md) |
 | 第31期 | 6 个相机交互动效：对焦方框、快门拖拽锁定、刻度旋钮横滑、控制盘错峰展开、取景框形变、弧形变焦条 | [相机交互动效.md](prompts/相机交互动效.md) |
+| 第32期 | 6 个跑步健身动效：频率步进、开跑倒计时、心率波形、跟手刻度轮、进度环填充、年度回顾 | [跑步健身动效.md](prompts/跑步健身动效.md) |
 | 加餐 | 2 个弹出交互：按钮长出菜单、卡片展开详情 | [弹出交互.md](prompts/弹出交互.md) |
 | 加餐 | 4 个加载动效：AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度 | [加载动效加餐.md](prompts/加载动效加餐.md) |
 
@@ -273,6 +274,7 @@ AI 写完代码后会按检查清单逐条自检：
 
 ## 更新记录
 
+- **v0.35**（2026-11-10）：第32期 · 6 个跑步健身动效（频率步进、开跑倒计时、心率波形、跟手刻度轮、进度环填充、年度回顾），动效库扩充到 149 个，新增"数据类的动效要一起变：数字、刻度、周边指标同一拍"规则。
 - **v0.34**（2026-11-09）：第31期 · 6 个相机交互动效（对焦方框、快门拖拽锁定、刻度旋钮横滑、控制盘错峰展开、取景框形变、弧形变焦条），动效库扩充到 143 个，新增"相机交互要像一台真机器：有阻尼、有阈值、有反馈"规则。
 - **v0.33**（2026-11-08）：第30期 · 6 个个人主页动效（头像堆叠展开、关注按钮变形、粉丝数翻滚、封面视差收起、简介就地编辑、上传进度环），动效库扩充到 137 个，新增"个人主页要不死但也不吵"规则。
 - **v0.32**（2026-11-07）：第29期 · 6 个页面转场动效（卡片变整页、弹层长成整页、返回视差、网格塌缩、图标飞行、导航长成面板），动效库扩充到 131 个，新增"页面转场要让人看见从哪来到哪去"规则。
