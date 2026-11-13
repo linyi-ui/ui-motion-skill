@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.36-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-149_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.37-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-161_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -80,6 +80,7 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 第31期 | 6 个相机交互动效：对焦方框、快门拖拽锁定、刻度旋钮横滑、控制盘错峰展开、取景框形变、弧形变焦条 | [相机交互动效.md](prompts/相机交互动效.md) |
 | 第32期 | 6 个跑步健身动效：频率步进、开跑倒计时、心率波形、跟手刻度轮、进度环填充、年度回顾 | [跑步健身动效.md](prompts/跑步健身动效.md) |
 | 第33期 | 6 个加载动效：像素擦除、生成氛围、占位形变、重构转圈、列表落位、胶囊溶解 | [加载动效.md](prompts/加载动效.md) |
+| 第34期 | 6 个卡片动效：渐变凝成卡片、扇形展开、环绕旋转收合、下滑收进卡堆、卡堆展开成列表、拍立得洗牌 | [卡片动效-第34期.md](prompts/卡片动效-第34期.md) |
 | 加餐 | 2 个弹出交互：按钮长出菜单、卡片展开详情 | [弹出交互.md](prompts/弹出交互.md) |
 | 加餐 | 4 个加载动效：AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度 | [加载动效加餐.md](prompts/加载动效加餐.md) |
 
@@ -234,6 +235,12 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 141 | 控制盘错峰展开 Controls Stagger | 点一下展开一排控件 |
 | 142 | 取景框形变 Mask Morph | 取景遮罩、头像框要换形状 |
 | 143 | 弧形变焦条 Zoom Arc | 变焦档位沿弧线排布 |
+| 156 | 渐变凝成卡片 Gradient Condense | 新卡开通、虚拟卡生成完成 |
+| 157 | 扇形展开 Card Fan Out | 一叠卡要摊开给用户挑 |
+| 158 | 环绕旋转收合 Orbit Collapse | 想让用户整体看一眼所有卡 |
+| 159 | 下滑收进卡堆 Swipe to Deck | 看完的卡要收进卡包 |
+| 160 | 卡堆展开成列表 Stack to List | 一叠摘要卡变逐条清单 |
+| 161 | 拍立得洗牌 Polaroid Shuffle | 相册整理、扫描识别的等待 |
 
 每个动效都有：
 - ✅ 什么时候用、怎么实现、完整参数
@@ -275,6 +282,7 @@ AI 写完代码后会按检查清单逐条自检：
 
 ## 更新记录
 
+- **v0.37**（2026-11-13）：第34期 · 6 个卡片动效（渐变凝成卡片、扇形展开、环绕旋转收合、下滑收进卡堆、卡堆展开成列表、拍立得洗牌），动效库扩充到 161 个，新增「凝结比弹出有质感、扇形要先对齐弧心、洗牌补位要并行」等 6 条经验。
 - **v0.36**（2026-11-11）：第33期 · 6 个加载动效（像素擦除、生成氛围、占位形变、重构转圈、列表落位、胶囊溶解），动效库扩充到 155 个，新增"等待要给证据、完成要有交代、两层不能叠影"规则。
 - **v0.35**（2026-11-10）：第32期 · 6 个跑步健身动效（频率步进、开跑倒计时、心率波形、跟手刻度轮、进度环填充、年度回顾），动效库扩充到 149 个，新增"数据类的动效要一起变：数字、刻度、周边指标同一拍"规则。
 - **v0.34**（2026-11-09）：第31期 · 6 个相机交互动效（对焦方框、快门拖拽锁定、刻度旋钮横滑、控制盘错峰展开、取景框形变、弧形变焦条），动效库扩充到 143 个，新增"相机交互要像一台真机器：有阻尼、有阈值、有反馈"规则。
