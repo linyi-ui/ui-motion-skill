@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "ui-motion",
   "owner": {
     "name": "linyi-ui",
@@ -6,15 +6,16 @@
   },
   "metadata": {
     "description": "UI/UX动效交互插件市场",
-    "version": "0.37.0"
+    "version": "0.38.0"
   },
   "plugins": [
     {
       "name": "ui-motion",
       "source": "./",
       "description": "UI/UX动效交互：装上后 AI 做界面会按动效库自动选对动效、按标准参数实现。",
-      "version": "0.37.0",
+      "version": "0.38.0",
       "category": "design"
     }
   ]
 }
+
