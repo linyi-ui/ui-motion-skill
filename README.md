@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.39-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-173_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.40-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-173_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -83,6 +83,7 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 第34期 | 6 个卡片动效：渐变凝成卡片、扇形展开、环绕旋转收合、下滑收进卡堆、卡堆展开成列表、拍立得洗牌 | [卡片动效-第34期.md](prompts/卡片动效-第34期.md) |
 | 第35期 | 6 个设置流程动效：开关联动展开、选项展开、档位横滑、数字步进、设置完成、主题切换 | [设置流程动效.md](prompts/设置流程动效.md) |
 | 第36期 | 6 个天气动效：温度翻牌、天空跟手滑、太阳弧线、城市翻页、月相拖动、小组件翻面 | [天气动效.md](prompts/天气动效.md) |
+| 第37期 | 6 个视频播放动效：刷到自动播放、点开变全屏、拖动进度、拖动时聚焦、横滑调倍速、下滑收成迷你条 | [视频播放动效.md](prompts/视频播放动效.md) |
 | 加餐 | 2 个弹出交互：按钮长出菜单、卡片展开详情 | [弹出交互.md](prompts/弹出交互.md) |
 | 加餐 | 4 个加载动效：AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度 | [加载动效加餐.md](prompts/加载动效加餐.md) |
 
@@ -297,6 +298,7 @@ AI 写完代码后会按检查清单逐条自检：
 ## 更新记录
 
 - **v0.38**（2026-11-14）：第35期 · 6 个设置流程动效（开关联动展开、选项展开、档位横滑、数字步进、设置完成、主题切换），动效库扩充到 167 个，新增「开关和撑开必须同一拍、吸附步长要等于刻度间距、扩散半径按到最远角算」等 6 条经验。
+- **v0.40**（2026-11-17）：第37期 · 6 个视频播放动效（刷到自动播放、点开变全屏、拖动进度、拖动时聚焦、横滑调倍速、下滑收成迷你条），动效库扩充到 179 个，新增「海报和视频必须交叉淡入不能一下黑屏、展开时照片要 cover 居中不换图、拖动气泡必须逐帧跟手而不是松手才跳、读数用等宽字体固定小数位」等 6 条经验。
 - **v0.39**（2026-11-16）：第36期 · 6 个天气动效（温度翻牌、天空跟手滑、太阳弧线、城市翻页、月相拖动、小组件翻面），动效库扩充到 173 个，新增「翻牌必须上下两片各自算进度、跟着手滑的整块元素和固定元素要分清、弧形轨道要用圆心半径算位置」等 6 条经验。
 - **v0.37**（2026-11-13）：第34期 · 6 个卡片动效（渐变凝成卡片、扇形展开、环绕旋转收合、下滑收进卡堆、卡堆展开成列表、拍立得洗牌），动效库扩充到 161 个，新增「凝结比弹出有质感、扇形要先对齐弧心、洗牌补位要并行」等 6 条经验。
 - **v0.36**（2026-11-11）：第33期 · 6 个加载动效（像素擦除、生成氛围、占位形变、重构转圈、列表落位、胶囊溶解），动效库扩充到 155 个，新增"等待要给证据、完成要有交代、两层不能叠影"规则。
