@@ -1,6 +1,6 @@
 # UI/UX 动效交互 Skill
 
-[![version](https://img.shields.io/badge/version-0.40-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-173_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
+[![version](https://img.shields.io/badge/version-0.41-blue?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/releases) [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/LICENSE) [![motions](https://img.shields.io/badge/动效库-185_个-orange?style=flat-square)](https://github.com/linyi-ui/ui-motion-skill/blob/main/skills/ui-motion/references/motions.md)
 
 给 AI 编码助手（Claude Code、Codex、Cursor 等）用的动效技能包。
 
@@ -84,6 +84,7 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 第35期 | 6 个设置流程动效：开关联动展开、选项展开、档位横滑、数字步进、设置完成、主题切换 | [设置流程动效.md](prompts/设置流程动效.md) |
 | 第36期 | 6 个天气动效：温度翻牌、天空跟手滑、太阳弧线、城市翻页、月相拖动、小组件翻面 | [天气动效.md](prompts/天气动效.md) |
 | 第37期 | 6 个视频播放动效：刷到自动播放、点开变全屏、拖动进度、拖动时聚焦、横滑调倍速、下滑收成迷你条 | [视频播放动效.md](prompts/视频播放动效.md) |
+| 第38期 | 6 个阅读器动效：拖页角翻页、长按划线高亮、划词菜单、章节目录滑出、字号调节重排、合书收进书架 | [阅读器动效.md](prompts/阅读器动效.md) |
 | 加餐 | 2 个弹出交互：按钮长出菜单、卡片展开详情 | [弹出交互.md](prompts/弹出交互.md) |
 | 加餐 | 4 个加载动效：AI 出图显影、图标扇形下载、视频缓冲、外卖接力进度 | [加载动效加餐.md](prompts/加载动效加餐.md) |
 
@@ -256,6 +257,12 @@ npx skills add https://github.com/linyi-ui/ui-motion-skill
 | 171 | 城市翻页 City Deck | 多城市、多地点卡片来回切换 |
 | 172 | 月相拖动 Moon Phase | 月相、周期、连续可调的数值 |
 | 173 | 小组件翻面 Widget Flip | 桌面小组件点开看详情 |
+| 174 | 拖页角翻页 Page Flip | 阅读器分页翻页、电子书、漫画翻页 |
+| 175 | 长按划线高亮 Highlight | 阅读时选中一句话做标注 |
+| 176 | 划词菜单 Selection Menu | 选中文字后要复制、笔记、搜索 |
+| 177 | 章节目录滑出 Chapter Sheet | 阅读器/播放器跳章节 |
+| 178 | 字号调节重排 Font Reflow | 阅读器调字号、行高 |
+| 179 | 合书收进书架 Close to Shelf | 读完一本书要合上并放回书架 |
 
 每个动效都有：
 - ✅ 什么时候用、怎么实现、完整参数
@@ -298,6 +305,7 @@ AI 写完代码后会按检查清单逐条自检：
 ## 更新记录
 
 - **v0.38**（2026-11-14）：第35期 · 6 个设置流程动效（开关联动展开、选项展开、档位横滑、数字步进、设置完成、主题切换），动效库扩充到 167 个，新增「开关和撑开必须同一拍、吸附步长要等于刻度间距、扩散半径按到最远角算」等 6 条经验。
+- **v0.41**（2026-11-18）：第38期 · 6 个阅读器动效（拖页角翻页、长按划线高亮、划词菜单、章节目录滑出、字号调节重排、合书收进书架），动效库扩充到 185 个，新增 prompts/阅读器动效.md。
 - **v0.40**（2026-11-17）：第37期 · 6 个视频播放动效（刷到自动播放、点开变全屏、拖动进度、拖动时聚焦、横滑调倍速、下滑收成迷你条），动效库扩充到 179 个，新增「海报和视频必须交叉淡入不能一下黑屏、展开时照片要 cover 居中不换图、拖动气泡必须逐帧跟手而不是松手才跳、读数用等宽字体固定小数位」等 6 条经验。
 - **v0.39**（2026-11-16）：第36期 · 6 个天气动效（温度翻牌、天空跟手滑、太阳弧线、城市翻页、月相拖动、小组件翻面），动效库扩充到 173 个，新增「翻牌必须上下两片各自算进度、跟着手滑的整块元素和固定元素要分清、弧形轨道要用圆心半径算位置」等 6 条经验。
 - **v0.37**（2026-11-13）：第34期 · 6 个卡片动效（渐变凝成卡片、扇形展开、环绕旋转收合、下滑收进卡堆、卡堆展开成列表、拍立得洗牌），动效库扩充到 161 个，新增「凝结比弹出有质感、扇形要先对齐弧心、洗牌补位要并行」等 6 条经验。
